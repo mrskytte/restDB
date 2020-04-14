@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST TEST</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main></main>
+    <form onsubmit="preparePostData(); return false;">
+      <input type="text" name="name" id="form-name" placeholder="Team Name.." />
+      <input type="text" name="city" id="form-city" placeholder="Team City.." />
+      <input
+        type="text"
+        name="player"
+        id="form-player"
+        placeholder="Team Best Player.."
+      />
+      <input
+        type="number"
+        name="championships"
+        id="form-championships"
+        placeholder="Number of championships.."
+      />
+      <input type="submit" value="Submit" />
+    </form>
+    <template id="template">
+      <article data-id="">
+        <div class="content">
+          <h1 class="team"></h1>
+          <p class="championships"></p>
+          <p class="city"></p>
+          <p class="player"></p>
+        </div>
+        <button class="delete">Delete This</button>
+        <button class="update">Update</button>
+      </article>
+    </template>
+    <template id="content-template">
+      <div class="content">
+        <h1 class="team"></h1>
+        <p class="championships"></p>
+        <p class="city"></p>
+        <p class="player"></p>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
