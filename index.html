@@ -9,8 +9,20 @@
   <body>
     <main></main>
     <form onsubmit="preparePostData(); return false;">
-      <input type="text" name="name" id="form-name" placeholder="Team Name.." />
-      <input type="text" name="city" id="form-city" placeholder="Team City.." />
+      <input
+        type="text"
+        name="name"
+        id="form-name"
+        placeholder="Team Name.."
+        required
+      />
+      <input
+        type="text"
+        name="city"
+        id="form-city"
+        placeholder="Team City.."
+        required
+      />
       <input
         type="text"
         name="player"
@@ -22,6 +34,7 @@
         name="championships"
         id="form-championships"
         placeholder="Number of championships.."
+        required
       />
       <input type="submit" value="Submit" />
     </form>
